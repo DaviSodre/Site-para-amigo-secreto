@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo Especial</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 1.8em;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .video-container {
+            width: 100%;
+            height: 350px;
+            background: #ddd;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        .back-button {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            background: #ee9ca7;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .back-button:hover {
+            background: #ff5673;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Especial</h1>
+        <p>Assista ao edit que fiz especialmente para você!</p>
+
+        <!-- Área para o vídeo (ainda a ser adicionado) -->
+        <div class="video-container">
+            <!-- Exemplo de iframe de vídeo (substitua com o vídeo que você for criar) -->
+            <iframe src="https://www.youtube.com/embed/ID_DO_VIDEO_AQUI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <a href="index.html" class="back-button">Voltar</a>
+    </div>
+</body>
+</html>
