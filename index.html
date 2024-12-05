@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presente</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  
+
+
+
+        }
+
+        h1 {
+            font-size: 1.8em;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            color: #fff;
+            background: #ee9ca7; /* Cor do botão igual ao da cartinha */
+            border: none;
+            border-radius: 30px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        button:active {
+            transform: translateY(0);
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vinda ao seu presente, [Nome da Pessoa]!</h1>
+        <p>Escolha uma opção:</p>
+        <div class="button-container">
+            <button onclick="window.location.href='carta.html'">Cartinha</button>
+            <button onclick="window.location.href='video.html'">Vídeo Especial</button>
+            <button onclick="window.location.href='memoria.html'">Jogo da Memória</button>
+        </div>
+    </div>
+</body>
+</html>
